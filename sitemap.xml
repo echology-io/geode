@@ -2,65 +2,65 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:xhtml="http://www.w3.org/1999/xhtml">
     <url>
-        <loc>https://geodelabs.io/</loc>
-        <xhtml:link rel="alternate" hreflang="en" href="https://geodelabs.io/"/>
-        <xhtml:link rel="alternate" hreflang="pt-BR" href="https://geodelabs.io/pt/"/>
+        <loc>https://geode.digital/</loc>
+        <xhtml:link rel="alternate" hreflang="en" href="https://geode.digital/"/>
+        <xhtml:link rel="alternate" hreflang="pt-BR" href="https://geode.digital/pt/"/>
         <lastmod>2026-03-14</lastmod>
         <priority>1.0</priority>
     </url>
     <url>
-        <loc>https://geodelabs.io/methodology</loc>
-        <xhtml:link rel="alternate" hreflang="en" href="https://geodelabs.io/methodology"/>
-        <xhtml:link rel="alternate" hreflang="pt-BR" href="https://geodelabs.io/pt/metodologia"/>
+        <loc>https://geode.digital/methodology</loc>
+        <xhtml:link rel="alternate" hreflang="en" href="https://geode.digital/methodology"/>
+        <xhtml:link rel="alternate" hreflang="pt-BR" href="https://geode.digital/pt/metodologia"/>
         <lastmod>2026-03-14</lastmod>
         <priority>0.8</priority>
     </url>
     <url>
-        <loc>https://geodelabs.io/contact</loc>
-        <xhtml:link rel="alternate" hreflang="en" href="https://geodelabs.io/contact"/>
-        <xhtml:link rel="alternate" hreflang="pt-BR" href="https://geodelabs.io/pt/contato"/>
+        <loc>https://geode.digital/contact</loc>
+        <xhtml:link rel="alternate" hreflang="en" href="https://geode.digital/contact"/>
+        <xhtml:link rel="alternate" hreflang="pt-BR" href="https://geode.digital/pt/contato"/>
         <lastmod>2026-03-14</lastmod>
         <priority>0.7</priority>
     </url>
     <url>
-        <loc>https://geodelabs.io/pt/</loc>
-        <xhtml:link rel="alternate" hreflang="pt-BR" href="https://geodelabs.io/pt/"/>
-        <xhtml:link rel="alternate" hreflang="en" href="https://geodelabs.io/"/>
+        <loc>https://geode.digital/pt/</loc>
+        <xhtml:link rel="alternate" hreflang="pt-BR" href="https://geode.digital/pt/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://geode.digital/"/>
         <lastmod>2026-03-14</lastmod>
         <priority>1.0</priority>
     </url>
     <url>
-        <loc>https://geodelabs.io/pt/metodologia</loc>
-        <xhtml:link rel="alternate" hreflang="pt-BR" href="https://geodelabs.io/pt/metodologia"/>
-        <xhtml:link rel="alternate" hreflang="en" href="https://geodelabs.io/methodology"/>
+        <loc>https://geode.digital/pt/metodologia</loc>
+        <xhtml:link rel="alternate" hreflang="pt-BR" href="https://geode.digital/pt/metodologia"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://geode.digital/methodology"/>
         <lastmod>2026-03-14</lastmod>
         <priority>0.8</priority>
     </url>
     <url>
-        <loc>https://geodelabs.io/pt/contato</loc>
-        <xhtml:link rel="alternate" hreflang="pt-BR" href="https://geodelabs.io/pt/contato"/>
-        <xhtml:link rel="alternate" hreflang="en" href="https://geodelabs.io/contact"/>
+        <loc>https://geode.digital/pt/contato</loc>
+        <xhtml:link rel="alternate" hreflang="pt-BR" href="https://geode.digital/pt/contato"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://geode.digital/contact"/>
         <lastmod>2026-03-14</lastmod>
         <priority>0.7</priority>
     </url>
     <url>
-        <loc>https://geodelabs.io/what-is-geo</loc>
-        <xhtml:link rel="alternate" hreflang="en" href="https://geodelabs.io/what-is-geo"/>
-        <xhtml:link rel="alternate" hreflang="pt-BR" href="https://geodelabs.io/pt/o-que-e-geo"/>
+        <loc>https://geode.digital/what-is-geo</loc>
+        <xhtml:link rel="alternate" hreflang="en" href="https://geode.digital/what-is-geo"/>
+        <xhtml:link rel="alternate" hreflang="pt-BR" href="https://geode.digital/pt/o-que-e-geo"/>
         <lastmod>2026-03-14</lastmod>
         <priority>0.9</priority>
     </url>
     <url>
-        <loc>https://geodelabs.io/geo-vs-seo</loc>
-        <xhtml:link rel="alternate" hreflang="en" href="https://geodelabs.io/geo-vs-seo"/>
-        <xhtml:link rel="alternate" hreflang="pt-BR" href="https://geodelabs.io/pt/geo-vs-seo"/>
+        <loc>https://geode.digital/geo-vs-seo</loc>
+        <xhtml:link rel="alternate" hreflang="en" href="https://geode.digital/geo-vs-seo"/>
+        <xhtml:link rel="alternate" hreflang="pt-BR" href="https://geode.digital/pt/geo-vs-seo"/>
         <lastmod>2026-03-14</lastmod>
         <priority>0.9</priority>
     </url>
     <url>
-        <loc>https://geodelabs.io/how-ai-citations-work</loc>
-        <xhtml:link rel="alternate" hreflang="en" href="https://geodelabs.io/how-ai-citations-work"/>
-        <xhtml:link rel="alternate" hreflang="pt-BR" href="https://geodelabs.io/pt/como-citacoes-ia-funcionam"/>
+        <loc>https://geode.digital/how-ai-citations-work</loc>
+        <xhtml:link rel="alternate" hreflang="en" href="https://geode.digital/how-ai-citations-work"/>
+        <xhtml:link rel="alternate" hreflang="pt-BR" href="https://geode.digital/pt/como-citacoes-ia-funcionam"/>
         <lastmod>2026-03-14</lastmod>
         <priority>0.9</priority>
     </url>

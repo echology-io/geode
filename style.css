@@ -444,10 +444,11 @@ footer .container {
     gap: 16px;
 }
 footer .copy { font-size: 12px; color: var(--muted); }
-footer .footer-links { display: flex; gap: 20px; }
+footer .footer-links { display: flex; gap: 20px; flex-wrap: wrap; }
 footer .footer-links a { font-size: 12px; color: var(--muted); }
 footer .footer-links a:hover { color: var(--accent); }
 
 @media (max-width: 640px) {
     footer .container { flex-direction: column; text-align: center; }
+    footer .footer-links { justify-content: center; }
 }

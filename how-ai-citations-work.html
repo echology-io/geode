@@ -48,6 +48,46 @@
         ]
     }
     </script>
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+            {
+                "@type": "Question",
+                "name": "How does ChatGPT decide what to cite?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "ChatGPT uses a combination of its training data and real-time web browsing to generate answers. When browsing is active, it retrieves web content, evaluates relevance, and may cite specific URLs. Citation depends on content being accessible, well-structured, and directly relevant to the query. ChatGPT favors content that provides clear, authoritative answers without requiring extensive interpretation."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "How does Perplexity cite sources?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Perplexity is built specifically for research. It always cites sources, displaying numbered references alongside every answer. Perplexity indexes web content actively and selects sources based on relevance, recency, and structural clarity. Of all major AI platforms, Perplexity is the most citation-forward, making it a primary target for GEO."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "What signals do AI systems use to select citation sources?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "AI systems select sources based on structured content with clear headings and logical hierarchy, schema.org markup (FAQPage, Article, HowTo, Organization), topical authority demonstrated through comprehensive domain coverage, external references from other authoritative sources, clear organizational attribution and provenance, and FAQ or Q&A formatting that maps to user queries."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "What tactics do not work for AI citation?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Keyword stuffing, AI-generated content farms, link spam, and thin content at scale do not improve AI citation. AI systems evaluate semantic relevance and source trustworthiness, not keyword density or artificial link volume. These tactics can actively reduce citation likelihood."
+                }
+            }
+        ]
+    }
+    </script>
 </head>
 <body>
 
@@ -174,6 +214,27 @@
         </div>
     </div>
 
+    <!-- Related -->
+    <div class="page-section" style="padding-top: 0;">
+        <div class="container container--narrow">
+            <p class="section-label">Related</p>
+            <div class="faq-list">
+                <div class="faq-item">
+                    <h3><a href="/what-is-geo">What is Generative Engine Optimization (GEO)?</a></h3>
+                    <p>The definition, the shift from search to AI, and how GEO structures expertise for citation.</p>
+                </div>
+                <div class="faq-item">
+                    <h3><a href="/geo-vs-seo">GEO vs SEO: What's the Difference?</a></h3>
+                    <p>A direct comparison. When SEO still matters, when GEO takes priority, and how the two work together.</p>
+                </div>
+                <div class="faq-item">
+                    <h3><a href="/methodology">Geode Methodology</a></h3>
+                    <p>The five-step process: audit, extract, structure, publish, monitor. Perception before generation, applied to AI citation.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <!-- CTA -->
     <div class="page-section" style="text-align: center;">
         <div class="container container--narrow">
@@ -188,6 +249,9 @@
             <div class="copy">&copy; 2026 Geode | An <a href="https://echology.io">echology</a> company</div>
             <div class="footer-links">
                 <a href="/methodology">Methodology</a>
+                <a href="/what-is-geo">What is GEO</a>
+                <a href="/geo-vs-seo">GEO vs SEO</a>
+                <a href="/how-ai-citations-work">AI Citations</a>
                 <a href="/contact">Contact</a>
                 <a href="/pt/">Portugu&ecirc;s</a>
             </div>

@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://geodelabs.io/sitemap.xml
+Sitemap: https://geode.digital/sitemap.xml

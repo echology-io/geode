@@ -44,6 +44,14 @@
         <priority>0.7</priority>
     </url>
     <url>
+        <loc>https://geode.digital/build</loc>
+        <xhtml:link rel="alternate" hreflang="en" href="https://geode.digital/build"/>
+        <xhtml:link rel="alternate" hreflang="pt-BR" href="https://geode.digital/pt/construcao"/>
+        <lastmod>2026-03-14</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
         <loc>https://geode.digital/what-is-geo</loc>
         <xhtml:link rel="alternate" hreflang="en" href="https://geode.digital/what-is-geo"/>
         <xhtml:link rel="alternate" hreflang="pt-BR" href="https://geode.digital/pt/o-que-e-geo"/>

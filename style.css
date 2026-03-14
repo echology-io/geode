@@ -330,9 +330,9 @@ nav .container {
     color: var(--fg);
 }
 .process-step p {
-    font-size: 12px;
+    font-size: 14px;
     color: var(--muted);
-    line-height: 1.6;
+    line-height: 1.7;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif;
 }
 

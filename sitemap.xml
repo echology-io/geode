@@ -1,17 +1,45 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
     <url>
         <loc>https://geodelabs.io/</loc>
+        <xhtml:link rel="alternate" hreflang="en" href="https://geodelabs.io/"/>
+        <xhtml:link rel="alternate" hreflang="pt-BR" href="https://geodelabs.io/pt/"/>
         <lastmod>2026-03-14</lastmod>
         <priority>1.0</priority>
     </url>
     <url>
         <loc>https://geodelabs.io/methodology</loc>
+        <xhtml:link rel="alternate" hreflang="en" href="https://geodelabs.io/methodology"/>
+        <xhtml:link rel="alternate" hreflang="pt-BR" href="https://geodelabs.io/pt/metodologia"/>
         <lastmod>2026-03-14</lastmod>
         <priority>0.8</priority>
     </url>
     <url>
         <loc>https://geodelabs.io/contact</loc>
+        <xhtml:link rel="alternate" hreflang="en" href="https://geodelabs.io/contact"/>
+        <xhtml:link rel="alternate" hreflang="pt-BR" href="https://geodelabs.io/pt/contato"/>
+        <lastmod>2026-03-14</lastmod>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://geodelabs.io/pt/</loc>
+        <xhtml:link rel="alternate" hreflang="pt-BR" href="https://geodelabs.io/pt/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://geodelabs.io/"/>
+        <lastmod>2026-03-14</lastmod>
+        <priority>1.0</priority>
+    </url>
+    <url>
+        <loc>https://geodelabs.io/pt/metodologia</loc>
+        <xhtml:link rel="alternate" hreflang="pt-BR" href="https://geodelabs.io/pt/metodologia"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://geodelabs.io/methodology"/>
+        <lastmod>2026-03-14</lastmod>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://geodelabs.io/pt/contato</loc>
+        <xhtml:link rel="alternate" hreflang="pt-BR" href="https://geodelabs.io/pt/contato"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://geodelabs.io/contact"/>
         <lastmod>2026-03-14</lastmod>
         <priority>0.7</priority>
     </url>

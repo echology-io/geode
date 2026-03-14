@@ -40,7 +40,7 @@
 
     <div class="page-section" style="padding-top: 0;">
         <div class="container container--narrow">
-            <form id="contact-form" action="https://formspree.io/f/FORM_ID" method="POST">
+            <form id="contact-form" onsubmit="return submitForm(event)">
                 <div class="form-group">
                     <label for="name">Name</label>
                     <input type="text" id="name" name="name" required>
@@ -61,14 +61,15 @@
                     <label for="message">What does your organization do?</label>
                     <textarea id="message" name="message" placeholder="Brief description of your expertise and what you're known for."></textarea>
                 </div>
-                <button type="submit" class="btn btn-primary">Request Citation Audit</button>
+                <button type="submit" class="btn btn-primary" id="submit-btn">Request Citation Audit</button>
+                <p id="form-status" style="margin-top: 16px; font-size: 13px; display: none;"></p>
             </form>
         </div>
     </div>
 
     <footer>
         <div class="container">
-            <div class="copy">&copy; 2026 Geode</div>
+            <div class="copy">&copy; 2026 Geode | An <a href="https://echology.io">echology</a> company</div>
             <div class="footer-links">
                 <a href="/methodology">Methodology</a>
                 <a href="/contact">Contact</a>
@@ -85,6 +86,53 @@ function toggleMode() {
     localStorage.setItem('mode', document.body.classList.contains('light') ? 'light' : 'dark');
 }
 if (localStorage.getItem('mode') === 'light') document.body.classList.add('light');
+
+var LEADS_API = 'https://ops.echology.io/api/leads/inbound';
+
+function submitForm(e) {
+    e.preventDefault();
+    var btn = document.getElementById('submit-btn');
+    var status = document.getElementById('form-status');
+    btn.disabled = true;
+    btn.textContent = 'Sending...';
+    status.style.display = 'none';
+
+    var data = {
+        name: document.getElementById('name').value,
+        email: document.getElementById('email').value,
+        company: document.getElementById('company').value,
+        industry: document.getElementById('industry').value,
+        message: document.getElementById('message').value,
+        source: 'geodelabs.io'
+    };
+
+    fetch(LEADS_API, {
+        method: 'POST',
+        headers: {'Content-Type': 'application/json'},
+        body: JSON.stringify(data)
+    })
+    .then(function(r) {
+        if (!r.ok) throw new Error('Server error');
+        return r.json();
+    })
+    .then(function() {
+        status.textContent = 'Received. We will be in touch.';
+        status.style.color = 'var(--accent)';
+        status.style.display = 'block';
+        document.getElementById('contact-form').reset();
+    })
+    .catch(function() {
+        status.innerHTML = 'Could not reach our server. Email us directly at <a href="mailto:kyle@geodelabs.io">kyle@geodelabs.io</a>';
+        status.style.color = 'var(--amber)';
+        status.style.display = 'block';
+    })
+    .finally(function() {
+        btn.disabled = false;
+        btn.textContent = 'Request Citation Audit';
+    });
+
+    return false;
+}
 </script>
 
 </body>

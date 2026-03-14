@@ -40,7 +40,7 @@
 
     <div class="page-section" style="padding-top: 0;">
         <div class="container container--narrow">
-            <form id="contact-form" action="https://formspree.io/f/FORM_ID" method="POST">
+            <form id="contact-form" onsubmit="return submitForm(event)">
                 <div class="form-group">
                     <label for="name">Nome</label>
                     <input type="text" id="name" name="name" required>
@@ -61,15 +61,15 @@
                     <label for="message">O que sua organiza&ccedil;&atilde;o faz?</label>
                     <textarea id="message" name="message" placeholder="Descri&ccedil;&atilde;o breve da sua expertise e pelo que s&atilde;o conhecidos."></textarea>
                 </div>
-                <input type="hidden" name="language" value="pt-BR">
-                <button type="submit" class="btn btn-primary">Solicitar Auditoria</button>
+                <button type="submit" class="btn btn-primary" id="submit-btn">Solicitar Auditoria</button>
+                <p id="form-status" style="margin-top: 16px; font-size: 13px; display: none;"></p>
             </form>
         </div>
     </div>
 
     <footer>
         <div class="container">
-            <div class="copy">&copy; 2026 Geode</div>
+            <div class="copy">&copy; 2026 Geode | Uma empresa <a href="https://echology.io">echology</a></div>
             <div class="footer-links">
                 <a href="/pt/metodologia">Metodologia</a>
                 <a href="/pt/contato">Contato</a>
@@ -86,6 +86,54 @@ function toggleMode() {
     localStorage.setItem('mode', document.body.classList.contains('light') ? 'light' : 'dark');
 }
 if (localStorage.getItem('mode') === 'light') document.body.classList.add('light');
+
+var LEADS_API = 'https://ops.echology.io/api/leads/inbound';
+
+function submitForm(e) {
+    e.preventDefault();
+    var btn = document.getElementById('submit-btn');
+    var status = document.getElementById('form-status');
+    btn.disabled = true;
+    btn.textContent = 'Enviando...';
+    status.style.display = 'none';
+
+    var data = {
+        name: document.getElementById('name').value,
+        email: document.getElementById('email').value,
+        company: document.getElementById('company').value,
+        industry: document.getElementById('industry').value,
+        message: document.getElementById('message').value,
+        source: 'geodelabs.io',
+        language: 'pt-BR'
+    };
+
+    fetch(LEADS_API, {
+        method: 'POST',
+        headers: {'Content-Type': 'application/json'},
+        body: JSON.stringify(data)
+    })
+    .then(function(r) {
+        if (!r.ok) throw new Error('Erro no servidor');
+        return r.json();
+    })
+    .then(function() {
+        status.textContent = 'Recebido. Entraremos em contato.';
+        status.style.color = 'var(--accent)';
+        status.style.display = 'block';
+        document.getElementById('contact-form').reset();
+    })
+    .catch(function() {
+        status.innerHTML = 'N&atilde;o foi poss&iacute;vel conectar ao servidor. Envie email para <a href="mailto:kyle@geodelabs.io">kyle@geodelabs.io</a>';
+        status.style.color = 'var(--amber)';
+        status.style.display = 'block';
+    })
+    .finally(function() {
+        btn.disabled = false;
+        btn.textContent = 'Solicitar Auditoria';
+    });
+
+    return false;
+}
 </script>
 
 </body>
